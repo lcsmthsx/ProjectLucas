@@ -1,0 +1,157 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "amatic";
+    src: url(fontes/amaticsc-regular-webfont.woff);
+}
+
+body{
+    font-family: "amatic";
+   
+}
+
+header{
+    background: linear-gradient(#888888, #fefefe);
+}
+.imgaviao{
+    width: 200px;
+}
+.caixa{
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+.caixa h1{
+    font-size: 100px;
+    margin-left: 20px;
+    display: inline;
+    position: absolute;
+    top: 58px;
+    left: 80px;
+}
+.caixa nav{
+    position: absolute;
+    top: 80px;
+    right: 0;
+
+}
+.caixa li{
+    margin-left: 15px;
+    font-weight: bold;
+    display: inline;
+}
+.caixa li a{
+    font-size: 50px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+.caixa li a:hover{
+    color: rgb(2, 0, 131);
+    transform: scale(1.1);
+}
+main{
+    background: linear-gradient(#fefefe 85%, #888888);
+}
+main h1{
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto ;
+    padding: 5em 0;
+}
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    box-sizing: border-box;
+    background: rgba(45, 104, 143,0.3);
+    border-radius: 10px;
+    margin: 0 1.5%;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    transition: 1s all;
+}
+.produtos li:hover{
+    background:  rgba(25, 144, 255, 0.384);
+    transform: scale(1.05);
+}
+.produtos h2{
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1em;
+}
+.produtos p{
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.produtos li img{
+    margin: 8px 0;
+}
+
+
+footer{
+    background: #888888;
+}
+.sociais{
+    padding: 0px;
+    text-align: center;
+}
+.logolucas{
+    margin-top: 1em;
+}
+.sociais ul{
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+.sociais li{
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.sociais li img{
+    transition: 1s all;
+}
+.sociais li img:hover{
+    transform: rotate(360deg);
+}
+
+@media  screen and (max-width: 480px) {
+
+    .caixa, .imgaviao,.produtos{ 
+        width: auto;
+    }
+    .li{ text-align: center;
+    }
+    
+    .caixa h1{
+        text-align: center;
+        top: 82px;
+        left: 68px;
+    }
+    .caixa nav{
+        top: -60px;
+        position: relative;
+        text-align: center;
+    }
+    .produtos li{
+        box-sizing: border-box;
+        width: 70%;
+        margin: auto;
+        display: block;
+        margin-bottom: 1em;
+
+
+    }
+    .produtos li img{
+        transform: scale(0.6);
+    
+    }
+}

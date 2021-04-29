@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "amatic";
+    src: url(fontes/amaticsc-regular-webfont.woff);
+}
+
+body{
+    font-family: "amatic";
+
+
+}
+header{
+    background: linear-gradient(#888888, #fefefe);
+}
+.imgaviao{
+    width: 200px;
+}
+.caixa{
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+.caixa h1{
+    font-size: 100px;
+    margin-left: 20px;
+    display: inline;
+    position: absolute;
+    top: 58px;
+    left: 80px;
+}
+.caixa nav{
+    position: absolute;
+    top: 80px;
+    right: 0;
+
+}
+.caixa li{
+    margin-left: 15px;
+    font-weight: bold;
+    display: inline;
+}
+.caixa li a{
+    font-size: 50px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+}
+.caixa li a:hover{
+    color: rgb(2, 0, 131);
+    transform: scale(1.1);
+}
+.banner{
+    width: 100%;
+}
+.principal{
+    text-align: center;
+    font-weight: bold;
+    background: #fefefe;
+}
+.principal h2{
+    font-size: 40px;
+    padding: 1em 0;
+}
+.principal p{
+    font-size: 30px;
+    word-spacing: 3px;
+}
+.mapa{
+    background: linear-gradient(#fefefe, #888888);
+}
+.mapaconteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+.mapa p{
+    margin-bottom: 1em;
+}
+.video{
+    background: #888888;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.sombravideo{
+    box-shadow: 10px 10px 10px black;
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+
+
+footer{
+    background: #242323;
+}
+.sociais{
+    padding: 0px;
+    text-align: center;
+}
+.logolucas{
+    margin-top: 1em;
+}
+.sociais ul{
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+.sociais li{
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.sociais li img{
+    transition: 1s all;
+}
+.sociais li img:hover{
+    transform: rotate(360deg);
+}
+
+
+
+
+@media  screen and (max-width: 480px) {
+    .caixa, .imgaviao, .sombravideo, .principal, .mapaconteudo, .video{ 
+        width: auto;
+    }
+    .caixa h1{
+        text-align: center;
+        top: 82px;
+        left: 68px;
+    }
+    .caixa nav{
+        top: 0px;
+        position: relative;
+        text-align: center;
+    }
+
+}
